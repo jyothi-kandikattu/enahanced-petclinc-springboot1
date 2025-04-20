@@ -57,9 +57,9 @@ pipeline {
                         -Dsonar.organization=bkrrajmali \
                         -Dsonar.projectName=SpringBootPet \
                         -Dsonar.projectKey=bkrrajmali_springbootpet \
-                        -Dsonar.java.binaries=. \ */
-                     //   -Dsonar.exclusions=**/trivy-fs-output.txt
-                 //   '''
+                        -Dsonar.java.binaries=. \ 
+                        -Dsonar.exclusions=**/trivy-fs-output.txt
+                    '''
                 }
            }
         }
