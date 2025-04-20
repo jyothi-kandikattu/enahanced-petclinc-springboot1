@@ -64,7 +64,7 @@ pipeline {
            }
         }
 
-    /*    stage('Sonar Quality Gate') {
+        stage('Sonar Quality Gate') {
             steps {
                 timeout(time: 1, unit: 'MINUTES') {
                     waitForQualityGate abortPipeline: true, credentialsId: 'sonar'
@@ -72,7 +72,7 @@ pipeline {
             }
         }
 
-        stage('Maven Package') {
+    /*    stage('Maven Package') {
             steps {
                 echo "Maven Package Started"
                 sh 'mvn package'
