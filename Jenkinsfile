@@ -12,9 +12,9 @@ pipeline {    agent any
         FULL_IMAGE_NAME   = "${ACR_LOGIN_SERVER}/${IMAGE_NAME}:${IMAGE_TAG}"
         TENANT_ID         = "b96f9db9-e633-414e-8274-5182a2e9154b"
         RESOURCE_GROUP    = "rg"
-     /*   AKS_CLUSTER       = "springboot"
+        AKS_CLUSTER       = "springboot"
         K8S_NAMESPACE     = "default"
-        K8S_DEPLOYMENT    = "springboot-app" */
+        K8S_DEPLOYMENT    = "springboot-app" 
     }
 
     stages {
@@ -113,7 +113,7 @@ pipeline {    agent any
             }
         }
 
-    /*    stage('Azure Login to Kubernetes') {
+        stage('Azure Login to Kubernetes') {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'azure-acr-sp', usernameVariable: 'AZURE_USERNAME', passwordVariable: 'AZURE_PASSWORD')]) {
                     script {
@@ -154,7 +154,7 @@ pipeline {    agent any
                         """
                     }
                 }
-            }*/
+            }
         }
     }
 
