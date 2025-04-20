@@ -46,7 +46,7 @@ pipeline {
             }
         }
 
-     /*   stage('Sonar Analysis') {
+        stage('Sonar Analysis') {
             environment {
                 SCANNER_HOME = tool 'Sonar-scanner'
             }
@@ -60,9 +60,9 @@ pipeline {
                         -Dsonar.java.binaries=. \ */
                      //   -Dsonar.exclusions=**/trivy-fs-output.txt
                  //   '''
-             //   }
-         //   }
-     //   }
+                }
+           }
+        }
 
     /*    stage('Sonar Quality Gate') {
             steps {
