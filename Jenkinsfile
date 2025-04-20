@@ -57,7 +57,7 @@ pipeline {
                         -Dsonar.organization=jyothi-kandikattu \
                         -Dsonar.projectName=SpringBootPet \
                         -Dsonar.projectKey=jyothi-kandikattu_springbootpet \
-                        -Dsonar.java.binaries=. \ 
+                        -Dsonar.java.binaries=. \
                         -Dsonar.exclusions=**/trivy-fs-output.txt
                     '''
                 }
