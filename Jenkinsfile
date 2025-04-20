@@ -8,14 +8,14 @@ pipeline {
     environment {
         IMAGE_NAME        = "springbootapp"
         IMAGE_TAG         = "${BUILD_NUMBER}" // Use build number as version
-        ACR_NAME          = "jenkinsazure"
+     /*   ACR_NAME          = "jenkinsazure"
         ACR_LOGIN_SERVER  = "${ACR_NAME}.azurecr.io"
         FULL_IMAGE_NAME   = "${ACR_LOGIN_SERVER}/${IMAGE_NAME}:${IMAGE_TAG}"
         TENANT_ID         = "ec78375d-0db0-42cf-82a6-2e6403e95936"
         RESOURCE_GROUP    = "Jenkins"
         AKS_CLUSTER       = "springboot"
         K8S_NAMESPACE     = "default"
-        K8S_DEPLOYMENT    = "springboot-app"
+        K8S_DEPLOYMENT    = "springboot-app" */
     }
 
     stages {
