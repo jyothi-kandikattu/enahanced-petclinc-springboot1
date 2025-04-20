@@ -106,8 +106,8 @@ pipeline {    agent any
                 script {
                     echo "Docker Push Started"
                     sh '''
-                       // docker tag ${IMAGE_NAME}:${IMAGE_TAG} ${FULL_IMAGE_NAME}
-                        //docker push ${FULL_IMAGE_NAME}
+                        docker tag ${IMAGE_NAME}:${IMAGE_TAG} ${FULL_IMAGE_NAME}
+                        docker push ${FULL_IMAGE_NAME}
                     '''
                 }
             }
