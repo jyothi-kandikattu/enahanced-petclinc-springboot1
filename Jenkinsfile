@@ -5,7 +5,7 @@ pipeline {
         maven 'maven' // Ensure the Maven installation name matches the one configured in Jenkins
     }
 
-    environment {
+  /*  environment {
         IMAGE_NAME        = "springbootapp"
         IMAGE_TAG         = "${BUILD_NUMBER}" // Use build number as version
         ACR_NAME          = "jenkinsazure"
@@ -16,7 +16,7 @@ pipeline {
         AKS_CLUSTER       = "springboot"
         K8S_NAMESPACE     = "default"
         K8S_DEPLOYMENT    = "springboot-app"
-    }
+    }*/
 
     stages {
         stage('Checkout From Git') {
