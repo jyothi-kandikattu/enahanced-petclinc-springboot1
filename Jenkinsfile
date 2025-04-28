@@ -38,14 +38,14 @@ pipeline {    agent any
             }
         }
 
- /*       stage('File System Scan By Trivy') {
+        stage('File System Scan By Trivy') {
             steps {
                 echo "Trivy Scan Started"
                 sh 'trivy fs --format table --output trivy-report.txt --severity HIGH,CRITICAL .'
             }
         }
 
-        stage('Sonar Analysis') {
+/*        stage('Sonar Analysis') {
             environment {
                 SCANNER_HOME = tool 'Sonar-scanner'
             }
