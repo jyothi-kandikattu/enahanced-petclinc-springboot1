@@ -45,7 +45,7 @@ pipeline {    agent any
             }
         }
 
-/*        stage('Sonar Analysis') {
+        stage('Sonar Analysis') {
             environment {
                 SCANNER_HOME = tool 'Sonar-scanner'
             }
@@ -57,11 +57,11 @@ pipeline {    agent any
                         -Dsonar.projectName=SpringBootPet \
                         -Dsonar.projectKey=jyothi-kandikattu_springbootpet \
                         -Dsonar.java.binaries=. \
-                        -Dsonar.exclusions=**///trivy-fs-output.txt
-     //               '''
-     //           }
-     //      }
-     //   } */
+                        -Dsonar.exclusions=**/trivy-fs-output.txt
+                     '''
+                }
+           }
+        } 
 
     /*    stage('Sonar Quality Gate') {
             steps {
