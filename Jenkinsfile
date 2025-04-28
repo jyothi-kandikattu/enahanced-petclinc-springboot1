@@ -7,7 +7,7 @@ pipeline {    agent any
     environment {
         IMAGE_NAME        = "springbootapp"
         IMAGE_TAG         = "${BUILD_NUMBER}" // Use build number as version
-        ACR_NAME          = "jenkinsazure204"
+        ACR_NAME          = "jenkinsacr284"
         ACR_LOGIN_SERVER  = "${ACR_NAME}.azurecr.io"
         FULL_IMAGE_NAME   = "${ACR_LOGIN_SERVER}/${IMAGE_NAME}:${IMAGE_TAG}"
         TENANT_ID         = "b96f9db9-e633-414e-8274-5182a2e9154b"
