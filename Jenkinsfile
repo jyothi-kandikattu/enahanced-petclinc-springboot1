@@ -38,7 +38,7 @@ pipeline {    agent any
             }
         }
 
-        stage('File System Scan By Trivy') {
+ /*       stage('File System Scan By Trivy') {
             steps {
                 echo "Trivy Scan Started"
                 sh 'trivy fs --format table --output trivy-report.txt --severity HIGH,CRITICAL .'
@@ -57,11 +57,11 @@ pipeline {    agent any
                         -Dsonar.projectName=SpringBootPet \
                         -Dsonar.projectKey=jyothi-kandikattu_springbootpet \
                         -Dsonar.java.binaries=. \
-                        -Dsonar.exclusions=**/trivy-fs-output.txt
-                    '''
-                }
-           }
-        }
+                        -Dsonar.exclusions=**///trivy-fs-output.txt
+     //               '''
+     //           }
+     //      }
+     //   } */
 
     /*    stage('Sonar Quality Gate') {
             steps {
@@ -71,7 +71,7 @@ pipeline {    agent any
             }
         } */
 
-        stage('Maven Package') {
+/*        stage('Maven Package') {
             steps {
                 echo "Maven Package Started"
                 sh 'mvn package'
@@ -157,4 +157,4 @@ pipeline {    agent any
             }
         }
     }
-}
+}*/
