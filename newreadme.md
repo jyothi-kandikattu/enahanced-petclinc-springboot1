@@ -49,3 +49,6 @@ az aks create --resource-group $RG --name $NAME \
 
 
 ### Create secret in Kubernetes for connecting to ACR
+### Install kubernates on server
+ curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+ 
