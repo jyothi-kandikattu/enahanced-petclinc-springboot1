@@ -71,7 +71,7 @@ pipeline {    agent any
             }
         } */
 
-/*        stage('Maven Package') {
+        stage('Maven Package') {
             steps {
                 echo "Maven Package Started"
                 sh 'mvn package'
@@ -87,7 +87,7 @@ pipeline {    agent any
             }
         }
 
-        stage('Azure Login to ACR') {
+/*        stage('Azure Login to ACR') {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'azure-acr-sp', usernameVariable: 'AZURE_USERNAME', passwordVariable: 'AZURE_PASSWORD')]) {
                     script {
